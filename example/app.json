@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Vurp Example",
+    "slug": "vurp-react-native-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": { "bundleIdentifier": "com.usevurp.example" },
+    "android": { "package": "com.usevurp.example", "edgeToEdgeEnabled": true },
+    "plugins": [
+      "expo-notifications",
+      ["expo-image-picker", { "photosPermission": "Send photos to support." }]
+    ]
+  }
+}

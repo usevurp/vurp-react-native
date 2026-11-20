@@ -1,0 +1,53 @@
+/**
+ * Every fixed piece of text in the built-in messenger. Texts the business writes (title, welcome,
+ * availability messages) come from the Vurp dashboard instead. Pass any of these to VurpProvider's
+ * `strings`, for another language or your own wording.
+ */
+export const DEFAULT_STRINGS = {
+  chatTab: "Chat",
+  faqsTab: "FAQs",
+  close: "Close",
+  back: "All conversations",
+  loading: "Loading",
+  unavailableTitle: "Chat isn't available right now",
+  unavailableBody: "Please try again in a little while.",
+  retry: "Try again",
+  yourConversations: "Your conversations",
+  conversationFallback: "Conversation",
+  ended: "Ended",
+  emailPlaceholder: "Your email (required)",
+  namePlaceholder: "Your name (optional)",
+  emailRequired: "Enter your email so we can reply.",
+  chattingAs: (email: string) => `Chatting as ${email}`,
+  change: "Change",
+  messagePlaceholder: "Write a message…",
+  send: "Send",
+  attach: "Attach a photo or video",
+  sending: "Sending…",
+  notSent: "Not sent.",
+  conversationEnded: "This conversation has ended.",
+  startNew: "Start a new conversation",
+  assistantNotice: "Clyde, our AI assistant, answers first. If it can't help, it passes you to the team.",
+  assistantTag: "AI assistant",
+  assistantTyping: "Clyde is writing…",
+  emailRepliesNotice: (email: string) =>
+    `We'll email ${email || "you"} when the team replies. You can close this chat.`,
+  inAppRepliesNotice: "The team will reply here. Come back to this chat later to see it.",
+  uploading: (percent: number) => `Uploading… ${percent}%`,
+  readyToSend: "Ready to send",
+  remove: (name: string) => `Remove ${name}`,
+  fileUnavailable: "No longer available",
+  openVideo: "Play video",
+  whatsappTitle: "Chat on WhatsApp",
+  whatsappBody: "Prefer WhatsApp? Message us there instead.",
+  whatsappMessage: "Hi! I have a question (from your app).",
+  faqsEmpty: "No answers here yet.",
+  faqsError: "FAQs couldn't be loaded.",
+  faqsAll: "All",
+  faqsStillNeedHelp: "Still need help?",
+  faqsChat: "Chat with us",
+  poweredBy: "Powered by Vurp",
+  openChat: "Open chat",
+};
+
+export type VurpStrings = typeof DEFAULT_STRINGS;

@@ -1,0 +1,67 @@
+{
+  "name": "@usevurp/react-native",
+  "version": "0.1.0",
+  "description": "Vurp live chat for React Native and Expo apps: a ready-made messenger, or a headless client for your own UI.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usevurp/vurp-react-native.git"
+  },
+  "homepage": "https://github.com/usevurp/vurp-react-native#readme",
+  "bugs": {
+    "url": "https://github.com/usevurp/vurp-react-native/issues"
+  },
+  "keywords": [
+    "vurp",
+    "chat",
+    "live chat",
+    "support",
+    "react-native",
+    "expo"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "lib",
+    "src",
+    "!**/*.test.*"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rm -rf lib && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": ">=1.17",
+    "react": ">=18",
+    "react-native": ">=0.72"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-async-storage/async-storage": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.3.0",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "react": "19.3.1",
+    "react-native": "0.88.1",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.72.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.0.5"
+  }
+}
